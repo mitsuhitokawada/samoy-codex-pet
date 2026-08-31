@@ -1,0 +1,15 @@
+{
+  "name": "Samoy",
+  "short_name": "Samoy",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f7efe2",
+  "theme_color": "#c8102e",
+  "icons": [
+    {
+      "src": "./icon.png",
+      "sizes": "192x208",
+      "type": "image/png"
+    }
+  ]
+}
