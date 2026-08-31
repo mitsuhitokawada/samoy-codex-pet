@@ -15,6 +15,18 @@ iPhoneのSafariやホーム画面Webアプリで表示するための簡易ペ�
 - `samoy-*.mp4`: PiP向けの短いループ動画
 - `manifest.json`: ホーム画面追加用の設定
 
+## スプライト仕様
+
+Samoyのスプライトは、Codexカスタムペット向けの以下の形式です。
+
+- 画像サイズ: `1536 x 1872`
+- グリッド: `8列 x 9行`
+- 1セル: `192 x 208`
+- 背景: 透明
+- 形式: WebP
+
+各行は `idle`、`running-right`、`running-left`、`waving`、`jumping`、`failed`、`waiting`、`running`、`review` の状態に対応しています。
+
 ## ダウンロード
 
 Gitを使える場合:
@@ -37,7 +49,7 @@ mkdir -p ~/.codex/pets/samoy
 cp pet.json spritesheet.webp ~/.codex/pets/samoy/
 ```
 
-その後、Codex Desktopを再起動し、ペット選択でSamoyを選んでください。詳しい手順は [USAGE.md](./USAGE.md) にあります。
+その後、Codex Desktopを再起動し、`Settings > Appearance > Pets` または `設定 > 外観 > ペット` からSamoyを選んでください。詳しい手順は [USAGE.md](./USAGE.md) にあります。
 
 ## iPhoneで見る
 
@@ -62,3 +74,8 @@ http://<MacのLAN IP>:8000/pip.html
 ## ライセンス
 
 MIT Licenseです。個人利用、改変、再配布を自由に行えます。
+
+## 参考
+
+- [Codexの「ペット」の作り方](https://zenn.dev/galirage/articles/codex-custom-pets)
+- [Codexでペットを設定＆作成する方法専用スキルを使って、オリジナルのペットも作ってみた](https://note.com/mbbs/n/n18bcbef03bcb)
